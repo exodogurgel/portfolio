@@ -264,7 +264,7 @@ body.menu-expanded button {
   width: 26.8rem;
 }
 
-.skills-baner {
+.skills-banner {
   margin-top: -1rem;
   height: 64px;
   background: var(--primary-color);
@@ -279,13 +279,13 @@ body.menu-expanded button {
   overflow: hidden;
 }
 
-/*================= BANER SKILLS =================*/
-.skills-baner img {
+/*================= BANNER SKILLS =================*/
+.skills-banner img {
   width: 2.5rem;
-  animation: baner 40s linear infinite;
+  animation: banner 40s linear infinite;
 }
 
-@keyframes baner {
+@keyframes banner {
   0% {
     transform: translateX(-900%);
   }

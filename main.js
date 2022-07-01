@@ -21,3 +21,24 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
+
+ScrollReveal({
+  origin: 'bottom',
+  distance: '30px',
+  duration: 1000
+}).reveal(`
+  #home,
+  #home img,
+  .skills-banner,
+  .skills-banner img,
+  #about,
+  #about p,
+  #about img,
+  #skills,
+  #skills .skills-using,
+  #skills .skills-learning
+  #portfolio, 
+  #portfolio header, 
+  #portfolio .projects img,
+  #contact
+`)
