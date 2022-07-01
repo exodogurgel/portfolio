@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ÊxoDev</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="wrapper">
+        <a href="#home" class="logo">
+          <img src="./assets/logo.png" alt="êxodev" />
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+
+          <a href="#contact" class="button">Contact me</a>
+
+          <ul class="social-links">
+            <li>
+              <a href="mailto:exodowellis@gmail.com" target="_blank">
+                <img src="./assets/mail2.svg" alt="mail" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/exodogurgel" target="_blank">
+                <img src="./assets/github.svg" alt="github" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/exodo-gurgel/"
+                target="_blank"
+              >
+                <img src="./assets/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-label="Open menu"
+          aria-expanded="false"
+          id="openMenu"
+          class="open-menu"
+          onclick="openMenu()"
+        >
+          <img src="./assets/menu-burger.svg" alt="open-menu" />
+        </button>
+
+        <button
+          aria-label="Close menu"
+          aria-expanded="true"
+          id="closeMenu"
+          class="close-menu"
+          onclick="closeMenu()"
+        >
+          <img src="./assets/close.svg" alt="close-menu" />
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <header>
+          <h4>Hi, I am</h4>
+          <h1>Êxodo Gurgel 👋</h1>
+        </header>
+
+        <div class="content">
+          <p>
+            Front-end Developer <br />
+            Need a fully custom website?
+            <strong> Got a project? Let's talk.</strong>
+          </p>
+
+          <a href="#contact" class="button">
+            <img src="./assets/whatsapp.svg" alt="icone do whatsapp" />
+            Contact me
+          </a>
+        </div>
+
+        <div class="col-b">
+          <img src="./assets/profile-1.png" alt="main photo " />
+        </div>
+      </div>
+    </section>
+
+    <div class="skills-baner">
+      <img src="./assets/html.svg" alt="html" />
+      <img src="./assets/css.svg" alt="css" />
+      <img src="./assets/javascript.svg" alt="javascript" />
+      <img src="./assets/react.svg" alt="react" />
+      <img src="./assets/node.svg" alt="node" />
+      <img src="./assets/git.svg" alt="git" />
+      <img src="./assets/sqlite.svg" alt="sqlite" />
+      <img src="./assets/html.svg" alt="html" />
+      <img src="./assets/css.svg" alt="css" />
+      <img src="./assets/javascript.svg" alt="javascript" />
+      <img src="./assets/react.svg" alt="react" />
+      <img src="./assets/node.svg" alt="node" />
+      <img src="./assets/git.svg" alt="git" />
+      <img src="./assets/sqlite.svg" alt="sqlite" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
