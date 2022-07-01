@@ -275,6 +275,7 @@ body.menu-expanded button {
   overflow: hidden;
 }
 
+/*================= BANER SKILLS =================*/
 .skills-baner img {
   width: 2.5rem;
   animation: baner 40s linear infinite;
@@ -292,4 +293,22 @@ body.menu-expanded button {
   100% {
     transform: translateX(-900%);
   }
+}
+
+/*================= AboutE =================*/
+#about {
+  text-align: left;
+}
+
+#about p {
+  text-align: justify;
+}
+
+#about p:nth-child(1) {
+  margin-bottom: 3.4rem;
+}
+
+#about .col-b img {
+  margin-top: 6rem;
+  width: 31.5rem;
 }
