@@ -358,6 +358,15 @@ body.menu-expanded button {
   font-weight: 700;
 }
 
+/*================= PORTFOLIO =================*/
+#portfolio .projects {
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
 /* BACK TO TOP */
 #backToTopButton {
   position: fixed;
