@@ -359,12 +359,74 @@ body.menu-expanded button {
 }
 
 /*================= PORTFOLIO =================*/
-#portfolio .projects {
+#portfolio .projects .project {
   margin-top: 5rem;
 
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
+
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--primary-color), 0.4rem 0.4rem 0.4rem;
+  border-radius: 1rem;
+}
+
+#portfolio .projects .project {
+  position: relative;
+}
+
+#portfolio .projects .project .links {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  margin-top: -5rem;
+
+  width: 100%;
+  height: 10rem;
+  background: var(--primary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: transform 0.7s;
+}
+
+#portfolio .projects .project:hover .links {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#portfolio .projects .project .links a {
+  color: var(--secondary-color);
+
+  background: #156064;
+  box-shadow: 5px 5px 10px #125458, -5px -5px 10px #186c70;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding: 1.6rem 3.2rem;
+  border-radius: 4rem;
+
+  transition: filter 0.2s;
+}
+
+#portfolio .projects .project .links a:hover {
+  filter: brightness(0.9);
+  color: var(primary-color);
+}
+
+#portfolio .projects .project .links a:active {
+  box-shadow: inset 5px 5px 7px #125458, inset -5px -5px 7px #186c70;
+  font-size: 17px;
 }
 
 /* BACK TO TOP */
