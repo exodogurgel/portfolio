@@ -578,7 +578,7 @@ textarea::placeholder {
 .container {
   background: var(--primary-color);
   color: var(--secondary-color);
-  width: 50%;
+  min-width: 30rem;
   padding: 3rem;
 
   display: flex;
@@ -609,6 +609,31 @@ textarea::placeholder {
 
 .container a:hover {
   filter: brightness(0.9);
+}
+
+/*================= FOOTER =================*/
+footer {
+  padding-block: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.4rem;
+}
+
+footer .logo img {
+  width: 19.1rem;
+  margin-bottom: 0.9rem;
+}
+
+footer span {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
 }
 
 /* BACK TO TOP */
