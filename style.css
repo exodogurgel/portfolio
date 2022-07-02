@@ -11,7 +11,7 @@
 
   font-size: 62.5%;
 
-  --nav-height: 6rem;
+  --nav-height: 7rem;
 }
 
 html {
@@ -279,7 +279,7 @@ body.menu-expanded button {
   width: 26.8rem;
 }
 
-.skills-banner {
+.skills-banner .wrapper {
   margin-top: -1rem;
   height: 64px;
   background: var(--primary-color);
@@ -292,6 +292,8 @@ body.menu-expanded button {
   gap: 4rem;
 
   overflow: hidden;
+
+  width: 100%
 }
 
 /*================= BANNER SKILLS =================*/
@@ -653,4 +655,169 @@ footer span {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/*================= RESPONSIVE =================*/
+@media (min-width: 1024px) {
+  /*================= GERAL =================*/
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  .col-a {
+    grid-area: A;
+    text-align: left;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
+  section {
+    padding-top {
+      16rem;
+    }
+  }
+
+  /*================= NAVIGATION =================*/
+  /* RESET */
+  nav#navigation .wrapper * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+    filter: initial;
+  }
+
+  nav#navigation .logo img {
+    width: 16.1rem
+  }
+
+  nav#navigation .close-menu,
+  nav#navigation .open-menu,
+  nav#navigation .social-links {
+    display: none;
+  }
+
+  nav#navigation .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+  }
+
+  nav#navigation .menu ul:nth-child(1) {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  nav#navigation .menu ul li a {
+    color: var(--secondary-color);
+    opacity: 0.7;
+  }
+
+  nav#navigation .menu a.button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2.4rem;
+
+    color: var(--secondary-color);
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+
+    transition: filter 0.2s;
+  }
+
+  nav#navigation .menu a.button:hover {
+    filter: brightness(.9)
+  }
+
+  nav#navigation .menu li a {
+    transition: opacity 0.4s;
+  }
+
+  nav#navigation .menu li a.active,
+  nav#navigation .menu li a:hover {
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  nav#navigation .menu li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+
+    background: var(--secondary-color);
+
+    position: relative;
+    bottom: -2rem;
+    display: block;
+
+    transition: width 0.2s;
+  }
+
+  nav#navigation .menu li a.active::after,
+  nav#navigation .menu li a:hover::after {
+    width: 100%;
+  }
+
+  /*================= HOME =================*/
+  #home .wrapper {
+    grid-template-columns: 60.5rem 1fr;
+    grid-template-areas: 'A B';
+  }
+
+  #home .col-a {
+    text-align: left;
+    align-self: center;
+  }
+
+  #home .content p {
+    text-align: left;
+    width: 47rem;
+    margin: 0;
+    margin-bottom: 3rem;
+
+  }
+
+  #home .content .button {
+    margin: 0;
+  }
+
+  #home .col-b img {
+    width: 46.1rem;
+  }
+
+  /*================= skills-banner =================*/
+  .skills-banner {
+
+  }
+
+  .skills-banner img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .skills-banner .wrapper {
+    width: min(107.2rem, 100%);
+    margin-inline: auto;
+
+    border: 1px solid var(--secondary-color);
+  }
 }
