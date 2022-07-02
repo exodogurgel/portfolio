@@ -463,10 +463,15 @@ section#home header h3 {
 /*================= CONTACT =================*/
 #contact {
   text-align: left;
+  padding-bottom: 10rem;
 }
 
 #contact header {
   margin-bottom: 4rem;
+}
+
+#contact header h1 {
+  text-transform: uppercase;
 }
 
 #contact ul {
@@ -491,7 +496,7 @@ section#home header h3 {
 /* FORM */
 #contact form {
   background: var(--primary-color);
-  padding: 4rem 2rem;
+  padding: 5rem 4rem;
   width: 100%;
 
   border-radius: 1rem;
@@ -629,7 +634,8 @@ textarea::placeholder {
 
 /*================= FOOTER =================*/
 footer {
-  padding-block: 6rem;
+  background: black;
+  padding-block: 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -642,6 +648,10 @@ footer .wrapper {
   padding: 2.4rem;
 }
 
+footer .logo {
+  text-align: left;
+}
+
 footer .logo img {
   width: 19.1rem;
   margin-bottom: 0.9rem;
@@ -650,6 +660,8 @@ footer .logo img {
 footer span {
   color: var(--primary-color);
   margin-bottom: 1.5rem;
+  display: block;
+  text-align: left;
 }
 
 /* BACK TO TOP */
@@ -879,5 +891,56 @@ footer span {
 
   .projects .project {
     max-width: 32rem;
+  }
+
+  /*================= CONTACT =================*/
+  #contact .wrapper {
+    grid-template-columns: 1fr 57rem; 
+    grid-template-areas: 
+      'A B';
+
+    margin-top: 5rem;
+  }
+
+  #contact .col-a {
+    align-self: center;
+  }
+
+  #contact form input {
+    height: 4.6rem;
+
+    font-size: 1.6rem;
+  }
+
+  #contact form textarea {
+    height: 8rem;
+
+    font-size: 1.6rem;
+  }
+
+  
+/*================= FOOTER =================*/
+
+  footer div.wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'A B';
+    
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .col-a {
+    align-self: center;
+  }
+
+  footer .col-a span {
+    display: block;
+  }
+
+  footer .col-b {
+    align-self: center;
+    justify-self: end;
   }
 }

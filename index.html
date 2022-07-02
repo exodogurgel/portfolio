@@ -277,44 +277,48 @@
               <a target="_blank" href="https://google.com">Github</a>
             </div>
           </div>
-          
+
         </div>
     </section>
 
     <section id="contact">
       <div class="wrapper">
-        <header>
-          <h1>Contact me</h1>
-        </header>
-
-        <div class="content">
-          <ul>
-            <li>
-              <img src="./assets/map.svg" alt="map">
-              R. Alfredo Alves de Azevedo, 347
-            </li>
-            <li>
-              <img src="./assets/mail.svg" alt="mail">
-              exdodowellis@gmail.com
-            </li>
-          </ul>
-
-          <a href="https://wa.me/5584999406834" class="button" target="_blank">
-            <img src="./assets/whatsapp.svg" alt="WhatsApp">
-            Contact me
-          </a>
+        <div class="col-a">
+          <header>
+            <h1>Contact me</h1>
+          </header>
+          
+          <div class="content">
+            <ul>
+              <li>
+                <img src="./assets/map.svg" alt="map">
+                R. Alfredo Alves de Azevedo, 347
+              </li>
+              <li>
+                <img src="./assets/mail.svg" alt="mail">
+                exdodowellis@gmail.com
+              </li>
+            </ul>
+            
+            <a href="https://wa.me/5584999406834" class="button" target="_blank">
+              <img src="./assets/whatsapp.svg" alt="WhatsApp">
+              Contact me
+            </a>
+          </div>
         </div>
+        
+        <div class="col-b">
 
-        <form action="https://formsubmit.co/9bdb6be90736860f80339e213029fa59" method="POST">
-          <fieldset>
-            <div class="fieldset-wrapper">
-              <legend>
-                <img src="./assets/mail2.svg" alt="mail">
-                Fill the Form
-              </legend>
-              <div class="input-wrapper">
-                <label class="sr-only" for="name">Name</label>
-                <input 
+          <form action="https://formsubmit.co/9bdb6be90736860f80339e213029fa59" method="POST">
+            <fieldset>
+              <div class="fieldset-wrapper">
+                <legend>
+                  <img src="./assets/mail2.svg" alt="mail">
+                  Fill the Form
+                </legend>
+                <div class="input-wrapper">
+                  <label class="sr-only" for="name">Name</label>
+                  <input 
                   placeholder="Enter your name" 
                   type="text" 
                   id="name" 
@@ -346,32 +350,43 @@
                   id="message" 
                   name="message" 
                   required></textarea>
+                </div>
+                <input type="hidden" name="_next" value="https://portfolio-six-xi-69.vercel.app/thanks.html">
               </div>
-              <input type="hidden" name="_next" value="https://portfolio-six-xi-69.vercel.app/thanks.html">
-            </div>
-          </fieldset>
-          <button type="submit">
-            Submit
-            <img src="./assets/arrow-up-right.svg" alt="arrow">
-          </button>
-        </form>
+            </fieldset>
+            <button type="submit">
+              Submit
+              <img src="./assets/arrow-up-right.svg" alt="arrow">
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
     <footer>
       <div class="wrapper">
-        <div class="logo">
-          <img src="./assets/logo.png" alt="êxodev">
+        <div class="col-a">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="êxodev">
+          </div>
+          <span>©2022 - ÊxoDev.</span>
+          <span>Todos os direitos reservados.</span>
         </div>
-        <span>©2022 - ÊxoDev.</span>
-        <span>Todos os direitos reservados.</span>
   
-        <div class="social-links">
-          <img src="./assets/mail2.svg" alt="mail">
-          <img src="./assets/github.svg" alt="github">
-          <img src="./assets/linkedin.svg" alt="LinkedIn">
+        <div class="col-b">
+          <ul class="social-links ">
+            <li><a target="_blank" href="mailto:exodowellis@gmail.com">
+              <img src="./assets/mail2.svg" alt="mail">
+            </a></li>
+            <li><a target="_blank" href="https://github.com/exodogurgel">
+              <img src="./assets/github.svg" alt="github">
+            </a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/exodo-gurgel/">
+              <img src="./assets/linkedin.svg" alt="LinkedIn">
+            </a></li>
+          </ul>
         </div>
-      </div>
+    </div>
 
     </footer>
 
