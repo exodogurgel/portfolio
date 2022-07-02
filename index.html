@@ -252,8 +252,77 @@
     <section id="contact">
       <div class="wrapper">
         <header>
-          <h4>Contact me</h4>
-      </header>
+          <h1>Contact me</h1>
+        </header>
+
+        <div class="content">
+          <ul>
+            <li>
+              <img src="./assets/map.svg" alt="map">
+              R. Alfredo Alves de Azevedo, 347
+            </li>
+            <li>
+              <img src="./assets/mail.svg" alt="mail">
+              exdodowellis@gmail.com
+            </li>
+          </ul>
+
+          <a href="https://wa.me/5584999406834" class="button" target="_blank">
+            <img src="./assets/whatsapp.svg" alt="WhatsApp">
+            Contact me
+          </a>
+        </div>
+
+        <form action="https://formsubmit.co/9bdb6be90736860f80339e213029fa59" method="POST">
+          <fieldset>
+            <div class="fieldset-wrapper">
+              <legend>
+                <img src="./assets/mail2.svg" alt="mail">
+                Fill the Form
+              </legend>
+              <div class="input-wrapper">
+                <label class="sr-only" for="name">Name</label>
+                <input 
+                  placeholder="Enter your name" 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required>
+              </div>
+              <div class="input-wrapper">
+                <label class="sr-only" for="email">E-mail</label>
+                <input 
+                  placeholder="youremail@email.com" 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required>
+              </div>
+              <div class="input-wrapper">
+                <label class="sr-only" for="number">Phone number</label>
+                <input 
+                  placeholder="55-99-999999999" 
+                  type="number" 
+                  id="number" 
+                  name="number" 
+                  required>
+              </div>
+              <div class="input-wrapper">
+                <label class="sr-only" for="message">Your message</label>
+                <textarea 
+                  placeholder="Your message" 
+                  id="message" 
+                  name="message" 
+                  required></textarea>
+              </div>
+              <input type="hidden" name="_next" value="https://portfolio-six-xi-69.vercel.app/thanks.html">
+            </div>
+          </fieldset>
+          <button type="submit">
+            Submit
+            <img src="./assets/arrow-up-right.svg" alt="arrow">
+          </button>
+        </form>
       </div>
     </section>
   </div>
