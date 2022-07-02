@@ -423,8 +423,8 @@ section#home header h3 {
   opacity: 0;
   visibility: hidden;
 
-  transform: translateY(100%);
-  transition: transform 0.7s;
+  transform: translateY(50%);
+  transition: transform 0.5s ease-in;
 }
 
 #portfolio .projects .project:hover .links {
@@ -849,5 +849,35 @@ footer span {
 
   #about .col-b img {
     width: 50.8rem;
+  }
+
+  /*================= SKILLS =================*/
+  section#skills .line {
+    gap: 11rem;
+  }
+
+  section#skills .line img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  
+  section#skills .line .skill {
+    width: 8rem;
+  }
+
+  section#skills .line .skill span {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /*================= PORTFOLIO =================*/
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .projects .project {
+    max-width: 32rem;
   }
 }
