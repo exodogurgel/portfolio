@@ -11,7 +11,7 @@ function onScroll() {
 onScroll()
 
 function activateMenuAtCurrentSection(section) {
-  const targetLine = scrollY + innerHeight / 4
+  const targetLine = scrollY + innerHeight / 2
 
   const sectionTop = section.offsetTop
 
