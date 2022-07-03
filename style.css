@@ -405,6 +405,10 @@ section#home header h3 {
   position: relative;
 }
 
+#portfolio .projects .project img {
+  border-radius: 1rem;
+}
+
 #portfolio .projects .project .links {
   position: absolute;
   top: 50%;
@@ -893,6 +897,10 @@ footer span {
     max-width: 32rem;
   }
 
+  #portfolio .projects .project img {
+    height: 18rem;
+  }
+
   /*================= CONTACT =================*/
   #contact .wrapper {
     grid-template-columns: 1fr 57rem; 
@@ -920,6 +928,11 @@ footer span {
 
   
 /*================= FOOTER =================*/
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
 
   footer div.wrapper {
     grid-template-columns: 1fr 1fr;
