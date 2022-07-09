@@ -57,8 +57,8 @@ const projects = [
     id: '1',
     name: 'Rocket Notes',
     image: './assets/image 22.png',
-    github: 'https://github.com/exodogurgel/RocketNotes',
-    deploy: 'https://exodogurgel.github.io/RocketNotes/'
+    github: 'https://github.com/exodogurgel/RocketNotes-Front',
+    deploy: 'https://rocketnotes2.netlify.app/'
   },
 
   {
