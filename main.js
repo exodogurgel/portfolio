@@ -61,7 +61,6 @@ const projects = [
     deploy: 'https://rocketmovies2.netlify.app/'
   },
 
-
   {
     id: '11',
     name: 'Rocket Notes',
@@ -156,7 +155,7 @@ const projects = [
     image: './pictures/countdown.png',
     github: 'https://github.com/exodogurgel/Countdown',
     deploy: 'https://exodogurgel.github.io/Countdown/'
-  }
+  },
 
   {
     id: '23',
