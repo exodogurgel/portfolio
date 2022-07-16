@@ -54,7 +54,16 @@ function closeMenu() {
 /*============= data =============*/
 const projects = [
   {
-    id: '1',
+    id: '10',
+    name: 'Rocket Movies',
+    image: './pictures/rocket-movies.png',
+    github: 'https://github.com/exodogurgel/RocketMovies-Front',
+    deploy: 'https://rocketmovies2.netlify.app/'
+  },
+
+
+  {
+    id: '11',
     name: 'Rocket Notes',
     image: './assets/image 22.png',
     github: 'https://github.com/exodogurgel/RocketNotes-Front',
@@ -62,7 +71,7 @@ const projects = [
   },
 
   {
-    id: '2',
+    id: '12',
     name: 'Git Fav',
     image: './pictures/git-fav.png',
     github: 'https://github.com/exodogurgel/gitFav',
@@ -70,7 +79,7 @@ const projects = [
   },
 
   {
-    id: '3',
+    id: '13',
     name: 'Doctor Care',
     image: './pictures/doctor-care.png',
     github: 'https://github.com/exodogurgel/doctorCare',
@@ -78,7 +87,7 @@ const projects = [
   },
 
   {
-    id: '4',
+    id: '14',
     name: 'SPA Universe',
     image: './pictures/spa-universe.png',
     github: 'https://github.com/exodogurgel/SpaUniverse',
@@ -86,7 +95,7 @@ const projects = [
   },
 
   {
-    id: '5',
+    id: '15',
     name: 'Focus Timer',
     image: './pictures/focus-timer.png',
     github: 'https://github.com/exodogurgel/FocusTimer',
@@ -94,7 +103,7 @@ const projects = [
   },
 
   {
-    id: '6',
+    id: '16',
     name: 'Balance Sheet',
     image: './pictures/balance-sheet.png',
     github: 'https://github.com/exodogurgel/BalanceSheet',
@@ -102,7 +111,7 @@ const projects = [
   },
 
   {
-    id: '7',
+    id: '17',
     name: 'Rocket Coffee',
     image: './pictures/rocket-coffee.png',
     github: 'https://github.com/exodogurgel/RocketCoffee',
@@ -110,7 +119,7 @@ const projects = [
   },
 
   {
-    id: '8',
+    id: '18',
     name: 'Space Cream',
     image: './pictures/space-cream.png',
     github: 'https://github.com/exodogurgel/SpaceCream',
@@ -118,7 +127,7 @@ const projects = [
   },
 
   {
-    id: '9',
+    id: '19',
     name: 'RocketSect',
     image: './pictures/rocket-sect.png',
     github: 'https://github.com/exodogurgel/Rocket.sect',
@@ -126,7 +135,7 @@ const projects = [
   },
 
   {
-    id: '10',
+    id: '20',
     name: 'RocketForm',
     image: './pictures/rocket-form.png',
     github: 'https://github.com/exodogurgel/RocketForm',
@@ -134,7 +143,7 @@ const projects = [
   },
 
   {
-    id: '11',
+    id: '21',
     name: 'Calculator',
     image: './pictures/calculator.png',
     github: 'https://github.com/exodogurgel/Calculator',
@@ -142,22 +151,20 @@ const projects = [
   },
 
   {
-    id: '12',
+    id: '22',
     name: 'Countdown',
     image: './pictures/countdown.png',
     github: 'https://github.com/exodogurgel/Countdown',
     deploy: 'https://exodogurgel.github.io/Countdown/'
   }
 
-  /*
   {
-    id: '13',
+    id: '23',
     name: 'Age Checker',
     image: './pictures/age-checker.png',
     github: 'https://github.com/exodogurgel/ageChecker',
     deploy: 'https://exodogurgel.github.io/ageChecker/'
   }
-  */
 ]
 
 const SectionProjects = document.querySelector('.projects')
